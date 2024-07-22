@@ -5,6 +5,9 @@ app.use(express.json());
 app.get("/user", (req, res) => {
   res.send("life matters");
 });
+app.post("/post", (req, res) => {
+  res.send("life matters");
+});
 app.listen(8083, async (req, res) => {
   await connection;
   console.log("db is conncected....");
